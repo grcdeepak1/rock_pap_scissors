@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-RockPapScissors::Game.new
+RockPapScissors::Game.new.play
 
 ## Development
 
