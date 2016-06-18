@@ -34,3 +34,16 @@ class Human < Player
     puts "#{name} choose #{move}"
   end
 end
+
+class Computer < Player
+  NAMES = ['R2D2', 'Chitti'].freeze
+
+  def set_name
+    self.name = NAMES.sample
+  end
+
+  def choose
+    self.move = Move.new(Move::VALUES.sample)
+    puts "#{name} choose #{move}"
+  end
+end
